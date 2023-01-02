@@ -14,6 +14,7 @@ background-image: -moz-radial-gradient(#374566, #010203);
 background-image: -o-radial-gradient(#374566, #010203);
 background-image: radial-gradient(#374566, #010203);
 }
+        canvas{display:block}
         span {
             text-transform: uppercase;
         }
@@ -287,6 +288,13 @@ background-image: radial-gradient(#374566, #010203);
         a{
             text-decoration: none;
         }
+        .vuong{
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            user-select: none;
+        }
     </style>
     <script>
         window.open = function() {};
@@ -305,29 +313,33 @@ background-image: radial-gradient(#374566, #010203);
 
 <body>
     <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet" type="text/css">
-    <div class="container">
-        <div class="balloon">
-            <div><span>E</span>
+    <div class="vuong">
+        <div class="container">
+            <div class="balloon">
+                <div><span>E</span>
+                </div>
+                <div><span>M</span>
+                </div>
+                <div><span>I</span>
+                </div>
+                <div><span>U</span>
+                </div>
+                <div><span>U</span>
+                </div>
+                <div><span style="margin-left: -52px;">❤️</span>
+                </div>
             </div>
-            <div><span>M</span>
-            </div>
-            <div><span>I</span>
-            </div>
-            <div><span>U</span>
-            </div>
-            <div><span>U</span>
-            </div>
-            <div><span style="margin-left: -52px;">❤️</span>
-            </div>
+            <h1>Happy Birthday</h1>
         </div>
-        <h1>Happy Birthday</h1>
+        <div class="btn">
+            <button>
+                <a href="a.html">Click Vào đây nhaaa!!!!</a>
+            </button>
+        </div>
     </div>
-    <div class="btn">
-        <button>
-            <a href="a.html">Click Vào đây nhaaa!!!!</a>
-        </button>
-    </div>
-    <script>
+    
+    <canvas id="birthday"></canvas>
+    <script src="index.js">
         
     </script>
     <script>
